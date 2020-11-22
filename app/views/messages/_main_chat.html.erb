@@ -12,23 +12,7 @@
 </div>
 
 <div class="main_center">
-  <div class="post">
-    <div class="post_name">Tom
-    </div>
-    <div class="post_date">2020/3/31(Wed) 12:43:30
-    </div>
-  </div>
-  <div class="comment">おはよう
-
-  </div>
-  <div class="post">
-    <div class="post_name">Tom
-    </div>
-    <div class="post_date">2020/3/31(Wed) 12:47:30
-    </div>
-  </div>
-  <div class="comment">こんばんわ
-  </div>
+  <%= render partial: 'message',collection:@messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
@@ -41,3 +25,4 @@
   </div>
   <%= f.submit '送信', class: 'form-submit' %>
 <% end %>
+
