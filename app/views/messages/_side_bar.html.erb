@@ -1,6 +1,6 @@
 <div class="side_up">
   <div class="side_up_left">
-    <a href="#">Saka</a>
+    <%= link_to current_user.name, edit_user_path(current_user)%>
   </div>
   <div class="side_up_right">
     <a href="#">チャットを作成する</a>
@@ -15,7 +15,7 @@
   </div>
   <div class="rooms">
     <div class="room">
-      <a href="#">salaroom2</a>
+      <a href="#">sakaroom2</a>
     </div>
   </div>
 </div>
