@@ -24,7 +24,7 @@ RSpec.describe Message, type: :model do
       @message.content =nil
       @message.image = nil
       @message.valid?
-      expect(@message.errors.full_messages).to include("Image can't be blank")
+      expect(@message.errors.full_messages).to include("Content can't be blank")
     end
 
     it 'roomが紐付いていないと保存できないこと' do
